@@ -1,0 +1,26 @@
+{
+  "restApiRoot": "/api",
+  "host": "0.0.0.0",
+  "port": 1881,
+  "firebaseAdmin": {
+    "creds": "/secrets/culture-nut-exchange-firebase-adminsdk.json",
+    "databaseURL": "https://culture-nut-exchange.firebaseio.com"
+  },
+  "remoting": {
+    "context": false,
+    "rest": {
+      "handleErrors": false,
+      "normalizeHttpPath": false,
+      "xml": false
+    },
+    "json": {
+      "strict": false,
+      "limit": "100kb"
+    },
+    "urlencoded": {
+      "extended": true,
+      "limit": "100kb"
+    },
+    "cors": false
+  }
+}

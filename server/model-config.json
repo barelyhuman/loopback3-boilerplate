@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "BaseModel": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "BaseSQLModel": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "User": {
+    "dataSource": "transactional"
+  },
+  "AccessToken": {
+    "dataSource": "transactional",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "transactional",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "transactional",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "transactional",
+    "public": false
+  },
+  "Option": {
+    "dataSource": "transactional",
+    "public": true
+  },
+  "Dummy": {
+    "dataSource": "transactional",
+    "public": true
+  },
+  "FirebaseAdmin": {
+    "dataSource": "transactional",
+    "public": true
+  }
+}

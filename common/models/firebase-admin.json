@@ -1,0 +1,41 @@
+{
+  "name": "FirebaseAdmin",
+  "base": "BaseSQLModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "foreignKeys": {
+    "fkidx_firebaseadmin_fk_id_user": {
+      "name": "fkidx_firebaseadmin_fk_id_user",
+      "foreignKey": "fk_id_user",
+      "entityKey": "id",
+      "entity": "User"
+    }
+  },
+  "hidden": [
+    "fk_id_user"
+  ],
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "fk_id_user",
+      "primaryKey": "id"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": [
+        "socialLogin"
+      ]
+    }
+  ],
+  "methods": {}
+}

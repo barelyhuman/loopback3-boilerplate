@@ -1,0 +1,53 @@
+{
+  "name": "Option",
+  "plural": "Options",
+  "base": "BaseSQLModel",
+  "indexes": {
+    "idx_option_value_identifier": {
+      "keys": {
+        "value": 1,
+        "identifier": 1
+      },
+      "options": {
+        "unique": true
+      }
+    }
+  },
+  "options": {},
+  "foreignKeys": {},
+  "hidden": [],
+  "properties": {
+    "value": {
+      "type": "Number",
+      "required": true
+    },
+    "label": {
+      "type": "String",
+      "required": true
+    },
+    "identifier": {
+      "type": "String",
+      "required": true
+    },
+    "sequence": {
+      "type": "Number",
+      "required": true,
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": [
+        "fetchGlobalOptions",
+        "fetchGlobalOptionsForIdentifier"
+      ]
+    }
+  ],
+  "methods": {}
+}

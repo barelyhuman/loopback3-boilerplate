@@ -1,0 +1,23 @@
+{
+  "transactional": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "dummy",
+    "name": "transactional",
+    "connector": "postgresql",
+    "user": "admin",
+    "password": "password",
+    "ssl": false,
+    "min": 5,
+    "max": 200,
+    "connectTimeout": 300000,
+    "acquireTimeout": 300000,
+    "maxOfflineRequests": 10000
+  },
+  "memory": {
+    "name": "memory",
+    "localStorage": "",
+    "file": "",
+    "connector": "memory"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "culture-nut",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint"
+  },
+  "dependencies": {
+    "async": "^3.1.1",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "firebase": "^7.7.0",
+    "firebase-admin": "^8.9.2",
+    "helmet": "^3.10.0",
+    "lodash": "^4.17.15",
+    "loopback": "^3.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-connector-postgresql": "^3.8.1",
+    "loopback-console": "^1.1.0",
+    "module-alias": "^2.2.2",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "_moduleAliases": {
+    "@server": "server"
+  },
+  "license": "UNLICENSED",
+  "description": "Exchange Service Api's"
+}
