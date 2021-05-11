@@ -17,7 +17,7 @@
     "firebase": "^7.7.0",
     "firebase-admin": "^8.9.2",
     "helmet": "^3.10.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "loopback": "^3.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^6.2.0",
